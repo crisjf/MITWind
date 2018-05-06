@@ -60,10 +60,10 @@ def askForecast():
 @ask.intent('getRain')
 def askRain():
 	rain = getRain()
-	if rain['rain'] ==0:
+	if float(rain['rain'])==0:
 		rain_msg = "No rain has been recorded in the last hour."
 	else:
-		rain+msg = "There have been "+str(rain['rain'])+' inches of rainfall in the last hour...'
+		rain_msg = "There have been "+str(rain['rain'])+' inches of rainfall in the last hour...'
 	return statement(rain_msg)
 
 @ask.intent('getAllConditions') 
