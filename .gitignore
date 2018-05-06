@@ -1,0 +1,4 @@
+*.pyc
+ngrok
+notes.txt
+zappa_settings.json
